@@ -1,0 +1,46 @@
+{
+  "name": "renovate-config-config",
+  "description": "Opinionated full preset configs for Renovate",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.8",
+  "renovate-config": {
+    "angular": {
+      "description": "Default base configuration for all languages",
+{
+  "pinVersions": false,
+  "semanticCommits": true,
+  "semanticPrefix": "build:",
+  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
+  "packages": [
+    {
+      "packagePattern": "^@angular\/.*",
+      "groupName": "angular",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^jasmine.*",
+      "groupName": "jasmine",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^karma.*",
+      "groupName": "karma",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^protractor.*",
+      "groupName": "protractor",
+      "pinVersions": false
+    }
+  ]
+}
+}
